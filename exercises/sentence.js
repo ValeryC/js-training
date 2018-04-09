@@ -1,11 +1,17 @@
 'use strict'
 
 /*
- * Create a `sentence` function that takes an array of strings
- * and return a string of all the element separated by a space
+ * Create a function `sentence` that takes an array of strings
+ * and return a strings of all the element separated by spaces
  *
  */
 
+const array = ["lol",'oula', 'oumajakzej']
+
+const sentence = (array)=>{
+
+return array.join(' ')
+}
 
 //* Begin of tests
 const assert = require('assert')

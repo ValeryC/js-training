@@ -1,10 +1,15 @@
 'use strict'
 
 /*
- * Create a `words` function that takes a string
+ * Create a function `words` that take a string
  * and return an array of each words using space as a delimiter
  *
  */
+
+const string = 'ozaejh aehajfb ajlkhalrah  alihjazlkjazlk aeiazheaeiheihhh  hazhehzz z'
+const words = string => {
+  return string.split(" ")
+}
 
 
 //* Begin of tests

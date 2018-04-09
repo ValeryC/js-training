@@ -1,14 +1,25 @@
 'use strict'
 
 /*
- * Create a `isPositive` function that takes a number as
- * parameter and return true if the given number is
- * stricly positive, or false otherwise
+ * Create a function `isPositive` that takes a Number
+ * and return if the given number is positive
  *
  */
 
 // Your code:
+const isPositive =  (number) =>
+{
+// if(number>0){
+//   return true
+// }
+// else{
+//   return false
+// }
 
+// number > 0 ?  true :  false
+return (number > 0 ?  true :  false);
+
+}
 
 //* Begin of tests
 const assert = require('assert')

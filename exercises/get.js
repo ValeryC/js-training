@@ -1,7 +1,7 @@
 'use strict'
 
 /*
- * Create a `get` function that takes a key and return the corresponding value
+ * Create a get function that takes a key and return the corresponding value
  * in the sourceObject
  *
  * @notions Functions, Data-Structures, Get
@@ -16,8 +16,13 @@ const sourceObject = {
 }
 
 // Your code :
+const get = (key) => {
+   const x = sourceObject[key]
+   return x
 
-//* Begin of tests
+}
+
+//* Begin of test
 const assert = require('assert')
 
 assert.strictEqual(typeof get, 'function')

@@ -7,6 +7,64 @@
  *
  * @notions Primitive and Operators, Functions, While
  */
+// const multiply=(num1, num2)=> {
+//   let numNegatives = 0;
+//   if (num1 < 0) {
+//     numNegatives++;
+//   }
+//   if (num2 < 0) {
+//     numNegatives++;
+//   }
+//   num1 = Math.abs(num1);
+//   num2 = Math.abs(num2);
+//   let sum = 0;
+//   for (let i = 0; i < num2; i++) {
+//     sum += num1;
+//   }
+//   if (numNegatives === 0 || numNegatives === 2) {
+//     return sum;
+//   }
+//   return 0 - sum;
+// }
+
+
+
+
+const multiply = (a, b) => {
+let result = 0
+
+if (a === 0 || b === 0){
+return 0
+}
+
+if (b < 0) {
+b = -b
+a = -a
+}
+
+while (b > 0) {
+result = result + a
+b--
+}
+return result
+}
+
+// const multiply = (a,b) => {
+// if (b > 0) {
+// let mult = a
+// for (let i = 1; i < b; i++) {
+// mult = mult + a
+// }
+// return mult
+// }
+// else {
+// let multN = a
+// for (let i = 1; i > b; i--) {
+// multN = multN - a
+// }
+// return multN
+// }
+// }
 
 // Your code :
 

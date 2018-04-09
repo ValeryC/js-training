@@ -1,12 +1,15 @@
 'use strict'
 
 /*
- * Create a `add` function that takes 2 number arguments and add them
+ * Create a function `add` that takes 2 arguments and add them
  *
  * @notions Primitive and Operators, Functions
  */
 
 // Your code :
+const add = (oula,holé) => {
+  return oula+ holé
+}
 
 //* Begin of tests
 const assert = require('assert')

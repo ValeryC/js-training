@@ -8,6 +8,8 @@
  */
 
 // Your code :
+const getFirst = ['yo',3 , 'je', false, 53]
+return getFirst[0]
 
 //* Begin of tests
 const assert = require('assert')

@@ -1,7 +1,7 @@
 'use strict'
 
 /*
- * Create the `max` function that takes 2 number as arguments
+ * Create the function `max` that takes 2 number arguments
  * and returns the greatest
  * You must not just use `Math.max`, make your own.
  * see: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/max
@@ -10,7 +10,14 @@
  */
 
 // Your code :
-
+const max = (x,y) => {
+if(x>y){
+  return x
+}
+else{
+  return y
+}
+}
 //* Begin of tests
 const assert = require('assert')
 

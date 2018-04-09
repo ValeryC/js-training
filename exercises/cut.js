@@ -1,17 +1,35 @@
 'use strict'
 
 /*
- * Create the `cutFirst` function that takes a string and remove the 2 first characters
- * Create the `cutLast` function that takes a string and remove the 2 last characters
- * Create the `cutFirstLast` function that takes a string as parameter
- * and remove the 2 first characters and 2 last characters
+ * Create the function `cutFirst` that takes a string and remove the 2 last characters
+ * Create the function `cutLast` that takes a string and remove the 2 first charcters
+ * Create the function `cutFistLast` that takes a string
+ * and remove the 2 first charcters and 2 last characters
  *
- * @notions String methods
- * https://github.com/nan-academy/refs/blob/master/js-training/methods.md#string---transform
  */
 
-//* Begin of tests
-const assert = require('assert')
+const cutFirst = (string) =>{
+  return string.substr(0, string.length-2)
+}
 
-assert.fail('You must write your own tests')
+const cutLast = (string2) =>{
+  return string2.substr(2, string2.length)
+}
+
+const cutFirstLast =(string) =>{
+  return string.substr(2, string.length-4)
+}
+
+//* Begin of tests
+
+
+const assert = require('assert')
+assert.strictEqual(typeof cutFirst, 'function')
+assert.deepStrictEqual(cutFirst( 'abcdef' ), 'abcd')
+
+assert.strictEqual(typeof cutLast, 'function')
+assert.deepStrictEqual(cutLast( 'abcdef' ), 'cdef')
+
+assert.strictEqual(typeof cutFirstLast, 'function')
+assert.deepStrictEqual(cutFirstLast( 'abcdef' ), 'cd')
 // End of tests */
